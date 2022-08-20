@@ -13,8 +13,6 @@ class NumeroSeeder extends Seeder
      * @return void
      */
 
-    private static $order = 1;
-
     public function run()
     {
         $data = [

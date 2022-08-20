@@ -20,3 +20,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 //Route::get('/numeros', [App\Http\Controllers\NumeroController::class],'funcion');
 
 Route::resource('/numeros', App\Http\Controllers\NumeroController::class);
+
+Route::post('/auth', [App\Http\Controllers\AuthController::class, "login"]);
